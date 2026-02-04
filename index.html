@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup – Guia Farmácia</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- PÁGINA PRINCIPAL                            -->
+    <!-- ════════════════════════════════════════════ -->
+    <div id="mainPage">
+
+        <!-- 1 ── HEADER -->
+        <header>
+            <div class="logo" onclick="voltarPrincipal()">💊 Guia<span>Farma</span></div>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Categorias</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <!-- 2 ── HERO -->
+        <section class="hero">
+            <h1>Guia de Indicações Farmacêuticas</h1>
+            <p>Busque rapidamente por medicamentos, indicações, contraindicações e muito mais — tudo numa só plataforma.
+            </p>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar medicamento ou categoria…">
+                <button>Buscar</button>
+            </div>
+        </section>
+
+        <!-- 3 ── CATEGORIAS -->
+        <h2 class="section-title">Categorias<span></span></h2>
+
+        <div class="categories">
+            <div class="cat-card" onclick="mostrarInner('anti-infla.html')">
+                <div class="icon">💊</div>
+                <h3>Anti-inflamatórios</h3>
+                <p>AINEs, corticosteróides e mais</p>
+            </div>
+            <div class="cat-card verde" onclick="mostrarInner('analge.html')">
+                <div class="icon">🩹</div>
+                <h3>Analgésicos</h3>
+                <p>Paracetamol, dipirona…</p>
+            </div>
+            <div class="cat-card laranja" onclick="mostrarInner('antialer.html')">
+                <div class="icon">🫁</div>
+                <h3>Antialérgicos</h3>
+                <p>Anti-histamínicos e outros</p>
+            </div>
+            <div class="cat-card rosa">
+                <div class="icon">🦠</div>
+                <h3>Antibióticos</h3>
+                <p>Amoxicilina, azitromicina…</p>
+            </div>
+            <div class="cat-card roxo">
+                <div class="icon">🧠</div>
+                <h3>Ansiolíticos</h3>
+                <p>Benzodiazepínicos e mais</p>
+            </div>
+            <div class="cat-card amarelo">
+                <div class="icon">🏥</div>
+                <h3>Gastroprotetos</h3>
+                <p>IBP, antiácidos…</p>
+            </div>
+            <div class="cat-card vermelho" onclick="mostrarInner('tosse.html')">
+                <div class="icon">🫁</div>
+                <h3>Tosse</h3>
+                <p>Antitussígenos, expectorantes...</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 5 ── RODAPÉ (aparece sempre) -->
+    <footer>
+        © 2025 GuidaFarma – Modelo de layout · Apenas para referência
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tosse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="innerPage" class="inner-page">
+
+        <header>
+            <div class="logo">💊 Guia<span>Farma</span></div>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Categorias</a>
+                <a href="#">Legendas</a>
+            </nav>
+        </header>
+
+        <div class="inner-header">
+            <a class="back-btn" onclick="voltarPrincipal()">← Voltar às categorias</a>
+            <h2>🫁 Antitussígenos e Expectorantes</h2>
+            <p>Medicamentos para tosse seca e tosse com catarro</p>
+        </div>
+
+        <div class="med-list">
+
+            <!-- Card 1 -->
+            <div class="med-card">
+                <div class="med-card-header">
+                    <h4>Dextrometorfano</h4>
+                    <span class="tag tooltip" data-tooltip="Antitussígeno">Tosse seca</span>
+                </div>
+                <div class="med-card-body">
+                    <div class="info-block">
+                        <h5>✅ Indicações</h5>
+                        <p>Tosse seca, irritativa, sem catarro.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>⚠️ Contraindicações</h5>
+                        <p class="contra">Tosse com catarro, uso com antidepressivos, crianças pequenas.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>📝 Dose típica</h5>
+                        <p>10–20 mg a cada 4–6 horas.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>💡 Obs.</h5>
+                        <p>Não usar se houver secreção, pois pode prender o catarro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 (C1) -->
+            <div class="med-card">
+                <div class="med-card-header">
+                    <h4>Codeína (C1)</h4>
+                    <span class="tag tooltip" data-tooltip="Antitussígeno opioide">Tosse seca</span>
+                </div>
+                <div class="med-card-body">
+                    <div class="info-block">
+                        <h5>✅ Indicações</h5>
+                        <p>Tosse seca intensa, principalmente noturna.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>⚠️ Contraindicações</h5>
+                        <p class="contra">Crianças, gestantes, risco de dependência.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>📝 Dose típica</h5>
+                        <p>10–20 mg a cada 6–8 horas.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>💡 Obs.</h5>
+                        <p>Medicamento controlado — venda somente com receita.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="med-card">
+                <div class="med-card-header">
+                    <h4>Levodropropizina</h4>
+                    <span class="tag tooltip" data-tooltip="Antitussígeno periférico">Tosse seca</span>
+                </div>
+                <div class="med-card-body">
+                    <div class="info-block">
+                        <h5>✅ Indicações</h5>
+                        <p>Tosse seca, especialmente de origem alérgica.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>⚠️ Contraindicações</h5>
+                        <p class="contra">Crianças pequenas, insuficiência renal grave.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>📝 Dose típica</h5>
+                        <p>60 mg até 3x ao dia.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>💡 Obs.</h5>
+                        <p>Menor risco de sonolência que outros antitussígenos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="med-card">
+                <div class="med-card-header">
+                    <h4>Ambroxol</h4>
+                    <span class="tag tooltip" data-tooltip="Expectorante / Mucolítico">Catarro</span>
+                </div>
+                <div class="med-card-body">
+                    <div class="info-block">
+                        <h5>✅ Indicações</h5>
+                        <p>Tosse com catarro espesso e difícil de eliminar.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>⚠️ Contraindicações</h5>
+                        <p class="contra">Úlcera gástrica ativa.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>📝 Dose típica</h5>
+                        <p>30 mg 2 a 3 vezes ao dia.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>💡 Obs.</h5>
+                        <p>Aumentar ingestão de líquidos ajuda no efeito.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="med-card">
+                <div class="med-card-header">
+                    <h4>Acetilcisteína (NAC)</h4>
+                    <span class="tag tooltip" data-tooltip="Mucolítico">Catarro</span>
+                </div>
+                <div class="med-card-body">
+                    <div class="info-block">
+                        <h5>✅ Indicações</h5>
+                        <p>Tosse produtiva com secreção espessa.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>⚠️ Contraindicações</h5>
+                        <p class="contra">Asma não controlada, úlcera ativa.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>📝 Dose típica</h5>
+                        <p>600 mg 1x ao dia ou 200 mg 3x ao dia.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>💡 Obs.</h5>
+                        <p>Pode causar enjoo leve e cheiro forte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="med-card">
+                <div class="med-card-header">
+                    <h4>Bromexina</h4>
+                    <span class="tag tooltip" data-tooltip="Expectorante">Catarro</span>
+                </div>
+                <div class="med-card-body">
+                    <div class="info-block">
+                        <h5>✅ Indicações</h5>
+                        <p>Facilitar a eliminação do catarro.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>⚠️ Contraindicações</h5>
+                        <p class="contra">Úlcera gástrica.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>📝 Dose típica</h5>
+                        <p>8–16 mg 3x ao dia.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>💡 Obs.</h5>
+                        <p>Não associar com antitussígenos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="med-card">
+                <div class="med-card-header">
+                    <h4>Guaifenesina</h4>
+                    <span class="tag tooltip" data-tooltip="Expectorante">Catarro</span>
+                </div>
+                <div class="med-card-body">
+                    <div class="info-block">
+                        <h5>✅ Indicações</h5>
+                        <p>Tosse com catarro leve a moderado.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>⚠️ Contraindicações</h5>
+                        <p class="contra">Uso prolongado sem avaliação.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>📝 Dose típica</h5>
+                        <p>200–400 mg a cada 4 horas.</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>💡 Obs.</h5>
+                        <p>Beber bastante água potencializa o efeito.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2025 GuiaFarma – Modelo de layout · Apenas para referência
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

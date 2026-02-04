@@ -1,0 +1,381 @@
+ /* ─── RESET & BASE ─── */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Segoe UI', sans-serif;
+     background: #f0f2f5;
+     color: #2c3e50;
+     min-height: 100vh;
+ }
+
+ /* ─── RÓTULO "MOCKUP" ─── */
+ .mockup-badge {
+     position: fixed;
+     top: 18px;
+     right: 24px;
+     background: #e74c3c;
+     color: #fff;
+     font-size: 13px;
+     font-weight: 700;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     padding: 6px 14px;
+     border-radius: 20px;
+     z-index: 999;
+     box-shadow: 0 2px 8px rgba(231, 76, 60, .4);
+ }
+
+ /* ─────────────────────────────── */
+ /* 1 ── HEADER / NAVBAR            */
+ /* ─────────────────────────────── */
+ header {
+     background: #1a5276;
+     color: #fff;
+     padding: 16px 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+ }
+
+ .logo {
+     font-size: 22px;
+     font-weight: 700;
+     letter-spacing: 0.5px;
+     cursor: pointer;
+ }
+
+ .logo span {
+     color: #7ec8e3;
+ }
+
+ nav a {
+     color: #cde7f0;
+     text-decoration: none;
+     margin-left: 28px;
+     font-size: 14px;
+     font-weight: 500;
+     transition: color .2s;
+ }
+
+ nav a:hover {
+     color: #fff;
+ }
+
+ /* ─────────────────────────────── */
+ /* 2 ── HERO / BANNER TOPO         */
+ /* ─────────────────────────────── */
+ .hero {
+     background: linear-gradient(135deg, #1a5276 0%, #2e86c1 100%);
+     color: #fff;
+     padding: 60px 40px;
+     text-align: center;
+ }
+
+ .hero h1 {
+     font-size: 34px;
+     margin-bottom: 10px;
+ }
+
+ .hero p {
+     font-size: 16px;
+     opacity: .85;
+     max-width: 580px;
+     margin: 0 auto;
+ }
+
+ /* barra de busca dentro do hero */
+ .search-bar {
+     margin-top: 28px;
+     display: flex;
+     justify-content: center;
+     gap: 8px;
+ }
+
+ .search-bar input {
+     width: 380px;
+     padding: 12px 18px;
+     border: none;
+     border-radius: 8px;
+     font-size: 15px;
+     outline: none;
+ }
+
+ .search-bar button {
+     background: #f39c12;
+     color: #fff;
+     border: none;
+     padding: 12px 24px;
+     border-radius: 8px;
+     font-size: 15px;
+     font-weight: 600;
+     cursor: pointer;
+ }
+
+ /* ─────────────────────────────── */
+ /* 3 ── SEÇÕES DE CATEGORIAS       */
+ /*   (grid de "cards" clicáveis)   */
+ /* ─────────────────────────────── */
+ .section-title {
+     text-align: center;
+     padding: 40px 20px 16px;
+     font-size: 24px;
+     color: #1a5276;
+ }
+
+ .section-title span {
+     display: block;
+     width: 50px;
+     height: 3px;
+     background: #2e86c1;
+     margin: 8px auto 0;
+     border-radius: 2px;
+ }
+
+ .categories {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px;
+     padding: 20px 40px 40px;
+     max-width: 1100px;
+     margin: 0 auto;
+ }
+
+ .cat-card {
+     background: #fff;
+     border-radius: 14px;
+     padding: 30px 18px 24px;
+     text-align: center;
+     box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+     cursor: pointer;
+     transition: transform .2s, box-shadow .2s;
+     border-top: 4px solid #2e86c1;
+ }
+
+ .cat-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 24px rgba(0, 0, 0, .14);
+ }
+
+ .cat-card .icon {
+     font-size: 38px;
+     margin-bottom: 10px;
+ }
+
+ .cat-card h3 {
+     font-size: 16px;
+     color: #1a5276;
+     margin-bottom: 6px;
+ }
+
+ .cat-card p {
+     font-size: 13px;
+     color: #7f8c8d;
+ }
+
+ /* cores diferentes por card */
+ .cat-card.verde {
+     border-top-color: #27ae60;
+ }
+
+ .cat-card.laranja {
+     border-top-color: #e67e22;
+ }
+
+ .cat-card.vermelho {
+     border-top-color: #e71359;
+ }
+
+ .cat-card.roxo {
+     border-top-color: #9b59b6;
+ }
+
+ .cat-card.amarelo {
+     border-top-color: #f1c40f;
+ }
+
+  .cat-card.rosa {
+     border-top-color: #ff85f9;
+ }
+
+ /* ─────────────────────────────── */
+ /* 4 ── PÁGINA INTERNA (exemplo)   */
+ /*   Aparece quando você clica     */
+ /*   em uma categoria              */
+ /* ─────────────────────────────── */
+ .inner-page {
+     display: none;
+     padding: 0;
+ }
+
+ .inner-page {
+     display: block;
+ }
+
+ .inner-header {
+     background: #1a5276;
+     color: #fff;
+     padding: 28px 40px;
+ }
+
+ .inner-header h2 {
+     font-size: 26px;
+ }
+
+ .inner-header p {
+     font-size: 14px;
+     opacity: .8;
+     margin-top: 4px;
+ }
+
+ .back-btn {
+     display: inline-block;
+     margin-bottom: 12px;
+     color: #7ec8e3;
+     font-size: 14px;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ .back-btn:hover {
+     text-decoration: underline;
+ }
+
+ /* lista de medicamentos dentro da categoria */
+ .med-list {
+     max-width: 860px;
+     margin: 28px auto;
+     padding: 0 24px;
+ }
+
+ .med-card {
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 3px 12px rgba(0, 0, 0, .07);
+     margin-bottom: 18px;
+     overflow: visible;
+ }
+
+ .med-card-header {
+     background: #eaf4f9;
+     padding: 16px 22px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .med-card-header h4 {
+     font-size: 17px;
+     color: #1a5276;
+ }
+
+ .med-card-header .tag {
+     background: #2e86c1;
+     color: #fff;
+     font-size: 11px;
+     font-weight: 700;
+     padding: 3px 10px;
+     border-radius: 12px;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+ }
+
+ .tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Caixa do tooltip */
+.tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translateX(-50%);
+    background: #3461dd;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 100;
+}
+
+/* Setinha */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #222;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+}
+
+/* Hover desktop */
+.tooltip:hover::before,
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile / touch */
+@media (hover: none) {
+    .tooltip:active::before,
+    .tooltip:active::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+ .med-card-body {
+     padding: 18px 22px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 14px 32px;
+ }
+
+ .info-block h5 {
+     font-size: 12px;
+     text-transform: uppercase;
+     letter-spacing: 0.8px;
+     color: #2e86c1;
+     margin-bottom: 5px;
+ }
+
+ .info-block p {
+     font-size: 14px;
+     color: #555;
+     line-height: 1.5;
+ }
+
+ .contra {
+     color: #c0392b !important;
+ }
+
+ /* ─────────────────────────────── */
+ /* 5 ── RODAPÉ                     */
+ /* ─────────────────────────────── */
+ footer {
+     background: #1a5276;
+     color: #7ec8e3;
+     text-align: center;
+     padding: 24px;
+     font-size: 13px;
+     margin-top: 40px;
+ }
