@@ -3,5 +3,5 @@ function mostrarInner(url){
 }
 
 function voltarPrincipal() {
-    window.location = "../index.html";
+    window.location.href = "/guia-farma/";
 }
